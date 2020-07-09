@@ -11,15 +11,76 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+
 .list {
   list-style: none;
+  margin: 0px;
 }
+
 .link {
   text-decoration: none;
+  display: block;
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Хедер */
 
+/* .header {
+  padding-top: 23px;
+  padding-bottom: 26px;
+} */
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.logo {
+  margin-right: 85px;
+}
+
+.navigation-list-item-link {
+  padding-top: 31px;
+  padding-bottom: 33px;
+}
+
+.address-list {
+  display: flex;
+}
+
+/* .header-address {
+  display: flex;
+  margin-left: auto;
+} */
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .address-list-item:not(:last-child) {
+  margin-right: 50px;
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
