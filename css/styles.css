@@ -202,26 +202,69 @@ html {
 }
 
 /* Чем мы занимаемся */
+
 .title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--title-color);
+  margin-top: 0;
+  margin-bottom: 50px;
 }
+
+.services-list {
+  display: flex;
+  padding-bottom: 94px;
+  padding-left: 0;
+}
+
+.services-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .services-list-item .subtitle {
   text-align: center;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
+  margin: 0;
 }
 
 /* Наша команда */
+
+.team .title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 94px;
+}
+
+.team-list {
+  display: flex;
+  padding-bottom: 94px;
+  padding-left: 0;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.social-links {
+  display: flex;
+  padding-right: 32px;
+  padding-bottom: 24px;
+  padding-left: 32px;
+}
+.social-links-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .team-list-item-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--title-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-list-item-position {
   font-weight: 400;
@@ -229,6 +272,8 @@ html {
   line-height: 1.19;
   text-align: center;
   color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 
 /* Постоянные клиенты */
