@@ -10,6 +10,17 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 .list {
@@ -22,16 +33,13 @@ body {
   display: block;
 }
 
-.current {
-  color: var(--accent-color);
-}
-
 .container {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  outline: 2px solid black;
 }
 
 /* Хедер */
@@ -66,11 +74,6 @@ body {
 .address-list {
   display: flex;
 }
-
-/* .header-address {
-  display: flex;
-  margin-left: auto;
-} */
 
 .header .container {
   display: flex;
@@ -112,7 +115,13 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
+
 /* Герой */
+
+.hero {
+  background-color: cadetblue;
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -121,7 +130,18 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  /* width: 696px; */
+  padding-top: 200px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
+
+.order {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 200px;
+}
+
 .hero .button {
   font-weight: 700;
   font-size: 16px;
@@ -132,9 +152,35 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: var(--accent-color);
+
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  border-radius: 4px;
 }
 
 /* Преимущества */
+
+.advantages-list {
+  display: flex;
+  padding-top: 119px;
+  padding-bottom: 94px;
+  padding-left: 0;
+}
+
+.advantages-list-item {
+  width: 270px;
+}
+
+.advantages-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages-list-item-icon {
+  margin-bottom: 55px;
+}
+
 .subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -142,10 +188,17 @@ body {
   text-transform: uppercase;
   color: var(--title-color);
 }
+
+.advantages-list .subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 .description {
   font-weight: 400;
   line-height: 1.71;
   color: var(--text-color);
+  margin: 0;
 }
 
 /* Чем мы занимаемся */
