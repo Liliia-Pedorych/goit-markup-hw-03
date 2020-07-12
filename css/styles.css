@@ -33,15 +33,9 @@ html {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 2px solid black;
 }
 
 /* Хедер */
-
-/* .header {
-  padding-top: 23px;
-  padding-bottom: 26px;
-} */
 
 .navigation {
   display: flex;
