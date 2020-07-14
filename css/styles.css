@@ -207,6 +207,7 @@ html {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background: #f5f4fa;
 }
 .team .title {
   margin-top: 0;
@@ -215,14 +216,25 @@ html {
 .team-list {
   display: flex;
 }
+.team-list-item {
+  background: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+}
 .team-list-item:not(:last-child) {
   margin-right: 30px;
 }
 .social-links {
   display: flex;
+  justify-content: center;
   padding-right: 32px;
   padding-bottom: 24px;
   padding-left: 32px;
+}
+.social-links-item {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background: #f5f4fa;
 }
 .social-links-item:not(:last-child) {
   margin-right: 10px;
@@ -304,6 +316,9 @@ html {
 }
 .address-contact:not(:last-child) {
   margin-bottom: 9px;
+}
+.call {
+  padding-top: 12px;
 }
 .join {
   margin-bottom: 20px;
